@@ -1,10 +1,18 @@
 <template>
   <NuxtLink
     :to="`/product/${product.id}`"
-    class="border rounded p-4 flex flex-col hover:shadow-lg transition bg-white"
+    class="border rounded p-4 flex flex-col items-center justify-center hover:shadow-lg transition bg-white"
   >
-    <img :src="product.image" alt="" class="h-48 object-contain mb-4" />
-    <h2 class="font-semibold mb-2 line-clamp-2">{{ product.title }}</h2>
+    <NuxtImg
+      :src="product.image"
+      width="200"
+      height="200"
+      format="webp"
+      alt="Imagem do produto"
+      loading="lazy"
+      class="object-contain mb-4"
+    />
+    <h2 class="font-semibold mb-2 line-clamp-2 text-center">{{ product.title }}</h2>
     <p class="text-green-700 font-bold">R$ {{ product.price.toFixed(2) }}</p>
   </NuxtLink>
 </template>

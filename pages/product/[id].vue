@@ -1,7 +1,15 @@
 <template>
   <main class="max-w-3xl mx-auto">
     <div v-if="product" class="my-10">
-      <img :src="product.image" alt="product image" class="w-full md:w-96 object-contain" />
+      <NuxtImg
+        :src="product.image"
+        width="200"
+        height="200"
+        format="webp"
+        alt="Imagem do produto"
+        loading="lazy"
+        class="object-contain mb-4"
+      />
       <div class="mt-10">
         <h1 class="text-2xl font-bold mb-2">{{ product.title }}</h1>
         <p class="mb-4 text-gray-700">{{ product.description }}</p>

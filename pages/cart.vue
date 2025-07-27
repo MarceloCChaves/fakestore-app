@@ -19,8 +19,9 @@
             <span>{{ product.title }}</span>
             <div class="flex items-center gap-5">
               <span class="text-green-700 font-semibold">R$ {{ product.price.toFixed(2) }}</span>
-              <button @click="removeFromCart(product.id)">
-                <Icon name="uil:trash" style="color: red" />
+              <button class="flex items-center" @click="removeFromCart(product.id)">
+                <Icon name="uil:trash" class="text-red-500" />
+                <span class="text-red-500">Remover</span>
               </button>
             </div>
           </li>

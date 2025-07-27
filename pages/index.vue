@@ -2,7 +2,7 @@
   <section class="p-6">
     <h1 class="text-3xl font-bold mb-6">Produtos FakeStore</h1>
 
-    <div v-if="loading" class="mt-4 text-blue-600 font-bold">
+    <div v-if="loading" class="mt-4">
       Carregando...
     </div>
 
