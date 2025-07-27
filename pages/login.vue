@@ -3,7 +3,7 @@
     <h1 class="text-2xl font-bold mb-4">Fazer Login</h1>
     
     <input
-      v-model="username"
+      v-model="usernameInput"
       type="text"
       placeholder="Digite seu nome"
       class="mb-4 px-4 py-2 border rounded w-64"
@@ -28,7 +28,7 @@ const usernameInput = ref('');
 const { setLoggedIn, setUsername } = useAuth();
 
 const login = () => {
-  if (!usernameInput.value.trim()) {
+  if (usernameInput.value.length === 0) {
     toast.error({
     title: 'Erro',
     message: `O campo de nome de usuário não pode ser vazio`
