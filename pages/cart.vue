@@ -43,6 +43,10 @@ const cartProducts = ref<IProduct[]>([]);
 const isLoading = ref(true);
 const toast = useToast();
 
+definePageMeta({
+  middleware: ['auth']
+})
+
 const fetchProducts = async () => {
   isLoading.value = true;
 
