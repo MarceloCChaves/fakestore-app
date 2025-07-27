@@ -5,13 +5,11 @@
   >
     <img :src="product.image" alt="" class="h-48 object-contain mb-4" />
     <h2 class="font-semibold mb-2 line-clamp-2">{{ product.title }}</h2>
-    <p class="text-green-700 font-bold">${{ product.price }}</p>
+    <p class="text-green-700 font-bold">R$ {{ product.price.toFixed(2) }}</p>
   </NuxtLink>
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
-
 const { product } = defineProps<{
   product: {
     id: number

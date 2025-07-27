@@ -7,18 +7,14 @@ export const useCartStore = defineStore('cart', {
   actions: {
     addProduct(id: number) {
       if (!this.products.includes(id)) {
-        this.products.push(id)
+        this.products.push(id);
       }
     },
+    
     removeProduct(id: number) {
-      this.products = this.products.filter(fav => fav !== id)
+      this.products = this.products.filter(fav => fav !== id);
+      location.reload();
     },
-    toggleFavorite(id: number) {
-      if (this.products.includes(id)) {
-        this.removeProduct(id)
-      } else {
-        this.addProduct(id)
-      }
-    }
-  }
+  },
+  persist: true 
 })
