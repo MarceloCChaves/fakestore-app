@@ -7,7 +7,7 @@
       type="text"
       placeholder="Digite seu nome"
       class="mb-4 px-4 py-2 border rounded w-64"
-      required
+      data-username-input="username-input"
     />
 
     <button

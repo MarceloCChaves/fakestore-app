@@ -9,7 +9,7 @@
           <Icon name="uil:cart" size="25" />
           <span class="text-base">Carrinho</span>
         </NuxtLink>
-        <button @click="logout" class="flex items-center gap-2 text-red-500 text-base mt-2">
+        <button @click="logout" class="flex items-center gap-2 text-red-500 text-base mt-2" data-logout-button="logout-button">
           <Icon name="uil:sign-out-alt" size="25" />
           Fazer Logout
         </button>
