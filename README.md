@@ -1,75 +1,61 @@
-# Nuxt Minimal Starter
+# FakeStore App
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Este repositório contém um desafio técnico frontend para a Santri Soluções, com o objetivo de: 
 
-## Setup
+Criar uma aplicação simples com Nuxt 3 que consuma dados de uma API pública e
+apresente uma interface responsiva, utilizando SSR, rotas dinâmicas, middleware,
+gerenciamento de estado com Pinia, e boas práticas de acessibilidade, SEO e
+performance.
 
-Make sure to install dependencies:
+## Descrição do projeto
 
-```bash
-# npm
+O FakeStore App é uma aplicação desenvolvida com Nuxt 3 que simula uma loja online com autenticação simples. 
+O projeto inclui páginas protegidas por login, funcionalidade de logout, navegação entre rotas dinâmicas, visualização dos produtos no carrinho, total da compra e testes automatizados com Cypress.
+
+## Tecnologias
+- Nuxt 3
+- Pinia
+- Cypress
+- Tailwind CSS
+
+## Instalação
+
+Primeiramente, clone o repositório com o comando
+
+```
+git clone https://github.com/MarceloCChaves/fakestore-app.git
+```
+
+após isso, entre na pasta fakestore-app com o comando:
+
+```
+cd fakestore-app
+```
+feito isso, rode os comandos abaixo, para instalar e iniciar o projeto, respectivamente
+```
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+para rodar os testes, abra o seu terminal e rode o comando abaixo:
+```
+npx cypress open
 ```
 
-Locally preview production build:
+## Visualizar projeto
+Você ṕode estar visualizando o projeto através do link abaixo
+<br>
+[Preview](https://fakestore-app-psi.vercel.app/login)
 
-```bash
-# npm
-npm run preview
+## Sugestões de melhorias
+Para isso, produzi um documento contendo o que acredito que possa ser melhorado, pode ser conferido por meio do <a href="https://docs.google.com/document/d/1y2oHPDbphMn7nLUxGLz8vdUakWDkEhKfGL8yRfGbLgI/edit?usp=sharing">Link</a>
 
-# pnpm
-pnpm preview
+## Autor
 
-# yarn
-yarn preview
+<a href="https://github.com/MarceloCChaves">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/62251064?s=400&u=b1c8da11d91445ccb2d97b709ccbcd0524885d98&v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Marcelo Chaves</b></sub></a> <a href="https://avatars.githubusercontent.com/u/62251064?s=400&u=b1c8da11d91445ccb2d97b709ccbcd0524885d98&v=4" title="Marcelo"></a>
 
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+[![Linkedin Badge](https://img.shields.io/badge/-Marcelo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/marcelocchaves/)](https://www.linkedin.com/in/marcelocchaves/) 
+[![Gmail Badge](https://img.shields.io/badge/-Marcelochaves20000@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:Marcelochaves20000@gmail.com)](mailto:Marcelochaves20000@gmail.com)
